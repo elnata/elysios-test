@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esse é um pequeno projeto para avaliação, no qual, foi criado um sistema de criação de estoque, entradas e lots.
 
-Things you may want to cover:
+Para rodar o projeto é preciso realizar as seguintes comandos:
 
-* Ruby version
+* bundle install
+* rails db:create
+* rails db:migrate
+* rails db:seed
 
-* System dependencies
+Para realizar os testes basta executar o seguinte comando:
 
-* Configuration
+* rake spec
 
-* Database creation
 
-* Database initialization
+A documentação da API pode ser acessado no link:
 
-* How to run the test suite
+https://documenter.getpostman.com/view/3774026/UVsEV91g
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+O sistema aceita autenticação básica por token, para utilizar esse metodo basta a linha 4 do arquivo: api_controller.rb e seguir os seguintes passos:
 
-* ...
+* Rodar o comando: rails c
+* Pegar os dados: authentication_token e o email e preencher no Headear
